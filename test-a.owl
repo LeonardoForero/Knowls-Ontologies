@@ -1,0 +1,1380 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.knowls.app/dev/ontologies/gestion_responsabilidadMerge#"
+     xml:base="http://www.knowls.app/dev/ontologies/gestion_responsabilidadMerge"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:parametrizacion_normativa="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:gestion_responsabilidad="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://w3id.org/knowls/dev/ontologies/test-a#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/Parametrizacion_normativa#responsableDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.knowls.app/dev/ontologies/Parametrizacion_normativa#responsableDe"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/gestion_responsabilidad#aCargoDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#aCargoDe">
+        <owl:inverseOf rdf:resource="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#responsabilidadDelCargo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/gestion_responsabilidad#desempeñadoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#desempeñadoPor">
+        <owl:inverseOf rdf:resource="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#tieneCargo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/gestion_responsabilidad#esObligacionDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#esObligacionDe">
+        <owl:inverseOf rdf:resource="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#tieneLaObligacionDe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/gestion_responsabilidad#responsabilidadDelCargo -->
+
+    <owl:ObjectProperty rdf:about="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#responsabilidadDelCargo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/gestion_responsabilidad#tieneCargo -->
+
+    <owl:ObjectProperty rdf:about="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#tieneCargo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/gestion_responsabilidad#tieneLaObligacionDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#tieneLaObligacionDe"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#accionDeResponsabilidadParametrizada -->
+
+    <owl:ObjectProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#accionDeResponsabilidadParametrizada">
+        <owl:inverseOf rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#tieneAccion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#conceptualizaA -->
+
+    <owl:ObjectProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#conceptualizaA">
+        <owl:inverseOf rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#conceptualizadoPor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#conceptualizadoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#conceptualizadoPor"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#describeAccion -->
+
+    <owl:ObjectProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#describeAccion">
+        <owl:inverseOf rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#seDirigeA"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#estableceDisposicionNormativa -->
+
+    <owl:ObjectProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#estableceDisposicionNormativa">
+        <owl:inverseOf rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#establecidaPorMarcoJuridico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#establecidaPorMarcoJuridico -->
+
+    <owl:ObjectProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#establecidaPorMarcoJuridico">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#expedidoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#expedidoPor"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#objetoDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#objetoDe">
+        <owl:inverseOf rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#tieneObjeto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#parametrizaADisposicionNormativa -->
+
+    <owl:ObjectProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#parametrizaADisposicionNormativa">
+        <owl:inverseOf rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#parametrizadaPor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#parametrizadaPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#parametrizadaPor"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#responsableDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#responsableDe">
+        <owl:inverseOf rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#tieneResponsable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#seDirigeA -->
+
+    <owl:ObjectProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#seDirigeA"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#tieneAccion -->
+
+    <owl:ObjectProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#tieneAccion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#tieneObjeto -->
+
+    <owl:ObjectProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#tieneObjeto">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#tieneResponsable -->
+
+    <owl:ObjectProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#tieneResponsable">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/gestion_responsabilidad#identificador_de_la_persona -->
+
+    <owl:DatatypeProperty rdf:about="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#identificador_de_la_persona">
+        <rdfs:domain rdf:resource="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#Persona"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/gestion_responsabilidad#nombre_de_la_persona -->
+
+    <owl:DatatypeProperty rdf:about="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#nombre_de_la_persona"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/gestion_responsabilidad#nombre_del_cargo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#nombre_del_cargo"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#año_de_la_norma -->
+
+    <owl:DatatypeProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#año_de_la_norma"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#capacidad_del_objeto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#capacidad_del_objeto"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#clase_de_norma -->
+
+    <owl:DatatypeProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#clase_de_norma"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#descripcion_de_la_accion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#descripcion_de_la_accion"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#descripcion_del_responsable -->
+
+    <owl:DatatypeProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#descripcion_del_responsable"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#especialidad_del_marco_juridico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#especialidad_del_marco_juridico"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#expresion_de_la_responsabilidad_parametrizada -->
+
+    <owl:DatatypeProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#expresion_de_la_responsabilidad_parametrizada"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#identificador_de_la_disposicion_normativa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#identificador_de_la_disposicion_normativa"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#materia_del_marco_juridico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#materia_del_marco_juridico"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#modalidad_de_la_responsabilidad_parametrizada -->
+
+    <owl:DatatypeProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#modalidad_de_la_responsabilidad_parametrizada">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#nombre_de_la_accion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#nombre_de_la_accion"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#nombre_de_la_disposicion_normativa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#nombre_de_la_disposicion_normativa">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#nombre_de_la_institucion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#nombre_de_la_institucion"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#nombre_de_la_norma -->
+
+    <owl:DatatypeProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#nombre_de_la_norma">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#nombre_del_concepto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#nombre_del_concepto"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#nombre_del_objeto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#nombre_del_objeto">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#numero_de_la_norma -->
+
+    <owl:DatatypeProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#numero_de_la_norma"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#referencia_normativa_de_la_responsabilidad_parametrizada -->
+
+    <owl:DatatypeProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#referencia_normativa_de_la_responsabilidad_parametrizada"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#texto_de_la_disposicion_normativa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#texto_de_la_disposicion_normativa">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/gestion_responsabilidad#Cargo -->
+
+    <owl:Class rdf:about="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#Cargo">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#desempeñadoPor"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/gestion_responsabilidad#Individuo -->
+
+    <owl:Class rdf:about="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#Individuo">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#tieneLaObligacionDe"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Responsable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/gestion_responsabilidad#Persona -->
+
+    <owl:Class rdf:about="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#Persona">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#identificador_de_la_persona"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#nombre_de_la_persona"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#identificador_de_la_persona"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Accion -->
+
+    <owl:Class rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Accion">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#seDirigeA"/>
+                <owl:someValuesFrom rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Objeto"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#descripcion_de_la_accion"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Concepto -->
+
+    <owl:Class rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Concepto">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#conceptualizaA"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Disposicion_Normativa -->
+
+    <owl:Class rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Disposicion_Normativa">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#establecidaPorMarcoJuridico"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#identificador_de_la_disposicion_normativa"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Institucion -->
+
+    <owl:Class rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Institucion">
+        <rdfs:subClassOf rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Metadato"/>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#nombre_de_la_institucion"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Marco_Juridico -->
+
+    <owl:Class rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Marco_Juridico">
+        <rdfs:subClassOf rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Metadato"/>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#nombre_de_la_norma"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Metadato -->
+
+    <owl:Class rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Metadato"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Objeto -->
+
+    <owl:Class rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Objeto">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#objetoDe"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#nombre_del_objeto"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Parametrizacion -->
+
+    <owl:Class rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Parametrizacion"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Responsable -->
+
+    <owl:Class rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Responsable"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Rol -->
+
+    <owl:Class rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Rol">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#responsableDe"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Responsable"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/knowls/dev/ontologies/test-a##disposicion_normativa3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/knowls/dev/ontologies/test-a##disposicion_normativa3"/>
+    
+
+
+    <!-- http://w3id.org/knowls/dev/ontologies/test-a##institucion2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/knowls/dev/ontologies/test-a##institucion2">
+        <rdf:type rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Institucion"/>
+        <parametrizacion_normativa:nombre_de_la_institucion>Otra Institución.</parametrizacion_normativa:nombre_de_la_institucion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/gestion_responsabilidad#cargo1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#cargo1">
+        <gestion_responsabilidad:nombre_del_cargo>_Oficial de Protección Radiológica</gestion_responsabilidad:nombre_del_cargo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/gestion_responsabilidad#cargo2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#cargo2">
+        <gestion_responsabilidad:nombre_del_cargo>_Representante legal</gestion_responsabilidad:nombre_del_cargo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/gestion_responsabilidad#cargoing -->
+
+    <owl:NamedIndividual rdf:about="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#cargoing"/>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/gestion_responsabilidad#persona1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#persona1">
+        <gestion_responsabilidad:tieneCargo rdf:resource="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#cargo1"/>
+        <gestion_responsabilidad:tieneLaObligacionDe rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#accion2"/>
+        <gestion_responsabilidad:identificador_de_la_persona>17267751</gestion_responsabilidad:identificador_de_la_persona>
+        <gestion_responsabilidad:nombre_de_la_persona>leonardo</gestion_responsabilidad:nombre_de_la_persona>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/gestion_responsabilidad#persona2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#persona2">
+        <gestion_responsabilidad:tieneCargo rdf:resource="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#cargo2"/>
+        <gestion_responsabilidad:identificador_de_la_persona>40044100</gestion_responsabilidad:identificador_de_la_persona>
+        <gestion_responsabilidad:nombre_de_la_persona>Alejandra Ramírez</gestion_responsabilidad:nombre_de_la_persona>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/gestion_responsabilidad#persona200 -->
+
+    <owl:NamedIndividual rdf:about="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#persona200">
+        <gestion_responsabilidad:tieneCargo rdf:resource="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#cargoing"/>
+        <gestion_responsabilidad:identificador_de_la_persona>200</gestion_responsabilidad:identificador_de_la_persona>
+        <gestion_responsabilidad:nombre_de_la_persona>danny</gestion_responsabilidad:nombre_de_la_persona>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#accion1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#accion1">
+        <gestion_responsabilidad:responsabilidadDelCargo rdf:resource="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#cargo1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#accion2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#accion2">
+        <gestion_responsabilidad:responsabilidadDelCargo rdf:resource="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#cargo1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#concepto1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#concepto1">
+        <parametrizacion_normativa:nombre_del_concepto>_interesado en ...</parametrizacion_normativa:nombre_del_concepto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#disposicion_normativa1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#disposicion_normativa1">
+        <parametrizacion_normativa:nombre_de_la_disposicion_normativa>_Artículo 5.</parametrizacion_normativa:nombre_de_la_disposicion_normativa>
+        <parametrizacion_normativa:texto_de_la_disposicion_normativa>_Licencia de prestación de servicios de protección radiológica y control de calidad. Las personas interesadas en prestar servicios de protección radiológica y control de calidad a los equipos generadores de radiación ionizante, deberán obtener licencia de este Ministerio.</parametrizacion_normativa:texto_de_la_disposicion_normativa>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#disposicion_normativa2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#disposicion_normativa2">
+        <parametrizacion_normativa:parametrizadaPor rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#responsabilidad_parametrizada2"/>
+        <parametrizacion_normativa:nombre_de_la_disposicion_normativa>_Artículo 6.</parametrizacion_normativa:nombre_de_la_disposicion_normativa>
+        <parametrizacion_normativa:texto_de_la_disposicion_normativa>_Requisitos para la obtención de licencia. Para efectos del artículo anterior, las personas interesadas deberán presentar solicitud ante este Ministerio, a través del diligenciamiento del formato del Anexo número 2, acompañado de la siguiente documentación:
+6.1. Para personas naturales. Fotocopia del documento de identificación del solicitante y fotocopia del Registro Único Tributario (RUT). 
+6.2. Para personas jurídicas. Certificado de existencia y representación legal, cuya consulta se hará por parte de este Ministerio en el Registro Único Empresarial y Social (RUES) o en la entidad correspondiente.
+6.3. Contar con un director técnico, a cuyo cargo se encontrará la dirección de los servicios que llegaren a autorizarse en la licencia, quien deberá cumplir con los requisitos a que refiere el artículo 7° de esta resolución.
+6.4. Contar con infraestructura técnica, para lo cual deberá adjuntar: 
+6.4.1. Certificado o certificados de calibración de los equipos y detectores relacionados en el anexo número 2, los cuales deberán contener la identificación de dichos equipos y detectores con marcas, modelos, series, parámetros y rangos de medida. Los equipos y detectores deben estar calibrados con la periodicidad que establezca el fabricante, debiendo contarse además con la evidencia documental de dicha calibración en los términos y condiciones establecidos en la Sección 12 del Decreto 1595 de 2015 o la norma que lo modifique o sustituya. Los certificados de calibración de los referidos equipos y detectores deberán mantenerse actualizados durante el trámite de expedición de la correspondiente licencia. En caso de que el certificado no establezca término de vigencia de la calibración, este se entenderá de dos (2) años.
+6.4.2. Declaración o declaraciones de primera parte expedidas por el fabricante de los objetos de prueba relacionados en el anexo número 2.</parametrizacion_normativa:texto_de_la_disposicion_normativa>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#institucion1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#institucion1">
+        <rdf:type rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Institucion"/>
+        <parametrizacion_normativa:nombre_de_la_institucion>_Ministerio de Salud y Protección Social.</parametrizacion_normativa:nombre_de_la_institucion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#marco_juridico1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#marco_juridico1">
+        <rdf:type rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Marco_Juridico"/>
+        <parametrizacion_normativa:estableceDisposicionNormativa rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#disposicion_normativa1"/>
+        <parametrizacion_normativa:estableceDisposicionNormativa rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#disposicion_normativa2"/>
+        <parametrizacion_normativa:expedidoPor rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#institucion1"/>
+        <parametrizacion_normativa:año_de_la_norma>_2018</parametrizacion_normativa:año_de_la_norma>
+        <parametrizacion_normativa:clase_de_norma>_Resolución</parametrizacion_normativa:clase_de_norma>
+        <parametrizacion_normativa:especialidad_del_marco_juridico>_Regulación especializada</parametrizacion_normativa:especialidad_del_marco_juridico>
+        <parametrizacion_normativa:materia_del_marco_juridico>_Radiación ionizante.</parametrizacion_normativa:materia_del_marco_juridico>
+        <parametrizacion_normativa:numero_de_la_norma>_482</parametrizacion_normativa:numero_de_la_norma>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#marco_juridico2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#marco_juridico2">
+        <rdf:type rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Marco_Juridico"/>
+        <parametrizacion_normativa:estableceDisposicionNormativa rdf:resource="http://w3id.org/knowls/dev/ontologies/test-a##disposicion_normativa3"/>
+        <parametrizacion_normativa:expedidoPor rdf:resource="http://w3id.org/knowls/dev/ontologies/test-a##institucion2"/>
+        <parametrizacion_normativa:año_de_la_norma>2018</parametrizacion_normativa:año_de_la_norma>
+        <parametrizacion_normativa:clase_de_norma>Otra calse de norma.</parametrizacion_normativa:clase_de_norma>
+        <parametrizacion_normativa:especialidad_del_marco_juridico>otra especialidad</parametrizacion_normativa:especialidad_del_marco_juridico>
+        <parametrizacion_normativa:materia_del_marco_juridico>Otra materia.</parametrizacion_normativa:materia_del_marco_juridico>
+        <parametrizacion_normativa:numero_de_la_norma>100</parametrizacion_normativa:numero_de_la_norma>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#objeto1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#objeto1">
+        <parametrizacion_normativa:describeAccion rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#accion1"/>
+        <parametrizacion_normativa:capacidad_del_objeto>_obtención</parametrizacion_normativa:capacidad_del_objeto>
+        <parametrizacion_normativa:nombre_del_objeto>_Licencia de prestación de servicios de protección radiológica y control de calidad</parametrizacion_normativa:nombre_del_objeto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#objeto2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#objeto2">
+        <parametrizacion_normativa:describeAccion rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#accion2"/>
+        <parametrizacion_normativa:capacidad_del_objeto>_presentación</parametrizacion_normativa:capacidad_del_objeto>
+        <parametrizacion_normativa:nombre_del_objeto>_Documentación requerida</parametrizacion_normativa:nombre_del_objeto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#responsabilidad_parametrizada1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#responsabilidad_parametrizada1">
+        <rdf:type rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Parametrizacion"/>
+        <parametrizacion_normativa:parametrizaADisposicionNormativa rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#disposicion_normativa1"/>
+        <parametrizacion_normativa:tieneObjeto rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#objeto1"/>
+        <parametrizacion_normativa:tieneResponsable rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#responsable1"/>
+        <parametrizacion_normativa:expresion_de_la_responsabilidad_parametrizada>El interesado en prestar servicios en protección radiológica y control de calidad a equipos generadores de radiación ionizante; para hacerlo, debe obtener licencia del Ministerio de Salud y Protección Social.</parametrizacion_normativa:expresion_de_la_responsabilidad_parametrizada>
+        <parametrizacion_normativa:modalidad_de_la_responsabilidad_parametrizada>Obligación</parametrizacion_normativa:modalidad_de_la_responsabilidad_parametrizada>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#responsabilidad_parametrizada2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#responsabilidad_parametrizada2">
+        <rdf:type rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#Parametrizacion"/>
+        <parametrizacion_normativa:tieneObjeto rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#objeto2"/>
+        <parametrizacion_normativa:tieneResponsable rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#responsable1"/>
+        <parametrizacion_normativa:expresion_de_la_responsabilidad_parametrizada>... tal cosa!</parametrizacion_normativa:expresion_de_la_responsabilidad_parametrizada>
+        <parametrizacion_normativa:modalidad_de_la_responsabilidad_parametrizada>Obligación</parametrizacion_normativa:modalidad_de_la_responsabilidad_parametrizada>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.knowls.app/dev/ontologies/parametrizacion_normativa#responsable1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#responsable1">
+        <parametrizacion_normativa:conceptualizadoPor rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#concepto1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#n">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#rp">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#obj">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#acc">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#ins">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#nins">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#mj">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#amj">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#cmj">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#nmj">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#dn">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#x2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#x1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#vr">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#nobj">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#DN">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#nDN">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#rMJ">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#MJ">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#nombre_de_la_disposicion_normativa"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#DN"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#nDN"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#stringConcat"/>
+                                <swrl:arguments rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="urn:swrl#x"/>
+                                    <rdf:Description rdf:about="urn:swrl#rMJ"/>
+                                    <rdf:Description rdf:about="urn:swrl#nDN"/>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#nombre_de_la_norma"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#MJ"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#rMJ"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#identificador_de_la_disposicion_normativa"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#DN"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#tieneCargo"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#responsabilidadDelCargo"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/gestion_responsabilidad#tieneLaObligacionDe"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#p"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#nombre_del_concepto"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#c"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#n"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#conceptualizadoPor"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#c"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#descripcion_del_responsable"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#r"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#n"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#tieneObjeto"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#rp"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#obj"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#describeAccion"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#obj"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#acc"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#tieneAccion"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#rp"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#acc"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#nombre_de_la_institucion"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#ins"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#nins"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#año_de_la_norma"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#mj"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#amj"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#clase_de_norma"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#mj"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#cmj"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#stringConcat"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="urn:swrl#x"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="urn:swrl#nins"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:resource="urn:swrl#cmj"/>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:resource="urn:swrl#nmj"/>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first>_de</rdf:first>
+                                                                                        <rdf:rest rdf:parseType="Collection">
+                                                                                            <rdf:Description rdf:about="urn:swrl#amj"/>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#expedidoPor"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#mj"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#ins"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#numero_de_la_norma"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl#mj"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl#nmj"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#nombre_de_la_norma"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#mj"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#texto_de_la_disposicion_normativa"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#dn"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#x2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#identificador_de_la_disposicion_normativa"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#dn"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#x1"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#parametrizadaPor"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#dn"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#rp"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#stringConcat"/>
+                                                <swrl:arguments rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="urn:swrl#x"/>
+                                                    <rdf:Description rdf:about="urn:swrl#x1"/>
+                                                    <rdf:Description rdf:about="urn:swrl#x2"/>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#referencia_normativa_de_la_responsabilidad_parametrizada"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#rp"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#capacidad_del_objeto"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#obj"/>
+                        <swrl:argument2>_obtención</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#seDirigeA"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#acc"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#obj"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#nombre_de_la_accion"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#acc"/>
+                        <swrl:argument2>_obtener</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#seDirigeA"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#acc"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#obj"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#capacidad_del_objeto"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#obj"/>
+                                <swrl:argument2>_presentación</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#nombre_de_la_accion"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#acc"/>
+                        <swrl:argument2>_presentar</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#seDirigeA"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#acc"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#obj"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#nombre_de_la_accion"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#acc"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#vr"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#stringConcat"/>
+                                        <swrl:arguments rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="urn:swrl#x"/>
+                                            <rdf:Description rdf:about="urn:swrl#vr"/>
+                                            <rdf:Description rdf:about="urn:swrl#nobj"/>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#nombre_del_objeto"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#obj"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#nobj"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.knowls.app/dev/ontologies/parametrizacion_normativa#descripcion_de_la_accion"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#acc"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
